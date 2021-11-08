@@ -1,9 +1,14 @@
+import { getData } from '../../utils/apiCalls';
+import MainContent from '../MainContent/MainContent';
+import NavBar from '../NavBar/NavBar';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <p>howdy</p>
+      <p>New York Times News Reader</p>
+      <NavBar />
+      <MainContent />
     </div>
   );
 }
