@@ -1,10 +1,12 @@
 import './ArticleCard.css';
 
-const ArticleCard = () => {
+const ArticleCard = ({ title, date }) => {
 
   return (
-    <article>
-      <p>I am the ARTICLE CARD</p>
+    <article className='article-card'>
+      {/* <p>I am the ARTICLE CARD</p> */}
+      <p>{title}</p>
+      <p>{date}</p>
     </article>
   )
 }

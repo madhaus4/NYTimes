@@ -8,9 +8,8 @@ const ArticleContainer = ({ currentArticles }) => {
   })
 
   return (
-    <div>
-      <p>I am the ARTICLE CONTAINER</p>
-      {/* <ArticleCard /> */}
+    <div className='article-container'>
+      {/* <p>I am the ARTICLE CONTAINER</p> */}
       {articleSet}
     </div>
   )
