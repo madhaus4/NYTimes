@@ -5,17 +5,24 @@ import NavBar from '../NavBar/NavBar';
 import './App.css';
 
 const App = () => {
-  const [articles, setArticles] = useState()
+  const [currentArticles, setCurrentArticles] = useState([])
+  // const [errorMsg, setErrorMsg] = useState('')
+
+  const setData = () => {
+    getData('arts')
+      .then(data => setCurrentArticles(data.results))
+      .catch(error => console.log('error: ', error))
+  }
 
   useEffect(() => {
-    getData('arts')
+    setData()
   }, [])
 
   return (
     <div className="App">
       <p>New York Times News Reader</p>
       <NavBar />
-      <MainContent />
+      <MainContent currentArticles={currentArticles} />
     </div>
   );
 }
