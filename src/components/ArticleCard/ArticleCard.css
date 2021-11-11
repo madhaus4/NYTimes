@@ -1,3 +1,8 @@
+.article-card {
+  display: flex;
+  margin: 0 3vw;
+}
+
 .article-card > img {
   width: 20vw;
   height: auto;

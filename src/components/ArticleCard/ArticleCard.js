@@ -8,7 +8,7 @@ const ArticleCard = ({ title, date, abstract, multimedia }) => {
       <img src={multimedia} alt='' />
       <p>{title}</p>
       <p>{date}</p>
-      <p>{abstract}</p>
+      {/* <p>{abstract}</p> */}
     </article>
   )
 }
