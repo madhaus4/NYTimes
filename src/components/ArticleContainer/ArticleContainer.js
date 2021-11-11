@@ -5,10 +5,11 @@ const ArticleContainer = ({ allArticles, getCurrentArticle }) => {
   
   console.log('allArticles: ', allArticles)
 
+  
   let counter = 0
-
   const articleSet = allArticles.map(article => {
-    return <ArticleCard 
+    if (article.multimedia) {
+      return <ArticleCard 
       key={counter++}
       articleID={counter++}
       title={article.title} 
@@ -16,7 +17,8 @@ const ArticleContainer = ({ allArticles, getCurrentArticle }) => {
       abstract={article.abstract}
       multimedia={article.multimedia[0].url}
       getCurrentArticle={getCurrentArticle}
-    />
+      />
+    }
   })
 
   return (
