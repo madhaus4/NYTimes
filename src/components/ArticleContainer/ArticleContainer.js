@@ -1,16 +1,18 @@
 import ArticleCard from '../ArticleCard/ArticleCard';
 import './ArticleContainer.css';
 
-const ArticleContainer = ({ currentArticles }) => {
-  console.log('currentArticles: ', currentArticles)
+const ArticleContainer = ({ allArticles, getCurrentArticle }) => {
+  console.log('allArticles: ', allArticles)
   let counter = 0
-  const articleSet = currentArticles.map(article => {
+  const articleSet = allArticles.map(article => {
     return <ArticleCard 
       key={counter++}
+      articleID={counter++}
       title={article.title} 
       date={article.published_date} 
       abstract={article.abstract}
       multimedia={article.multimedia[0].url}
+      getCurrentArticle={getCurrentArticle}
     />
   })
 
