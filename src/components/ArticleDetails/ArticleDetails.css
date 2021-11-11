@@ -3,4 +3,10 @@
   height: 100vh;
   position: fixed;
   right: 0;
+  margin: 0 3vw;
+}
+
+.article-details-container > img {
+  height: auto;
+  width: 40vw;
 }
