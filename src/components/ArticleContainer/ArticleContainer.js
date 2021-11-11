@@ -2,8 +2,11 @@ import ArticleCard from '../ArticleCard/ArticleCard';
 import './ArticleContainer.css';
 
 const ArticleContainer = ({ allArticles, getCurrentArticle }) => {
+  
   console.log('allArticles: ', allArticles)
+
   let counter = 0
+
   const articleSet = allArticles.map(article => {
     return <ArticleCard 
       key={counter++}

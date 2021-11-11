@@ -13,7 +13,6 @@ const MainContent = ({ allArticles }) => {
 
   return (
     <main>
-      {/* <p>I am the MAINCONTENT</p> */}
       <ArticleContainer allArticles={allArticles} getCurrentArticle={getCurrentArticle} />
       <ArticleDetails currentArticle={currentArticle} />
     </main>
