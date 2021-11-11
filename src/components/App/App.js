@@ -23,6 +23,7 @@ const App = () => {
     <div className="App">
       {/* <img src={logo} alt='' /> */}
       <NavBar setData={setData} />
+      <div className='divider-line'></div>
       <MainContent allArticles={allArticles} />
     </div>
   );
