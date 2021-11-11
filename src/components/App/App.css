@@ -1,3 +1,7 @@
 .App {
   text-align: center;
 }
+.App > img {
+  height: 30vh;
+  width: auto;
+}
