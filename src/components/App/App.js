@@ -5,12 +5,12 @@ import NavBar from '../NavBar/NavBar';
 import './App.css';
 
 const App = () => {
-  const [currentArticles, setCurrentArticles] = useState([])
+  const [allArticles, setAllArticles] = useState([])
   // const [errorMsg, setErrorMsg] = useState('')
 
   const setData = () => {
     getData('arts')
-      .then(data => setCurrentArticles(data.results))
+      .then(data => setAllArticles(data.results))
       .catch(error => console.log('error: ', error))
   }
 
@@ -22,7 +22,7 @@ const App = () => {
     <div className="App">
       <p>New York Times News Reader</p>
       <NavBar />
-      <MainContent currentArticles={currentArticles} />
+      <MainContent allArticles={allArticles} />
     </div>
   );
 }

@@ -1,15 +1,15 @@
 import './ArticleCard.css';
 
-const ArticleCard = ({ title, date, abstract, multimedia }) => {
+const ArticleCard = ({ articleID, title, date, abstract, multimedia, getCurrentArticle }) => {
 
   return (
-    <article className='article-card'>
+    <article id={articleID} className='article-card'>
       {/* <p>I am the ARTICLE CARD</p> */}
       <img src={multimedia} alt='' />
       <div className='article-info'>
         <p>{title}</p>
         <p>{date}</p>
-        <button>Read more</button>
+        <button onClick={() => getCurrentArticle(title)}>Read more</button>
       </div>
       {/* <p>{abstract}</p> */}
     </article>
