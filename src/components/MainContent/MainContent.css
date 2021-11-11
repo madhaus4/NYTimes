@@ -1,18 +1,20 @@
 main {
-  color: purple;
-  border: 1px solid purple;
+  /* color: purple;
+  border: 1px solid purple; */
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  margin-top: 35vh;
 }
 
-main > div {
+/* main > div {
   color: pink;
   border: 1px solid pink;
-}
+} */
 
-main > div > article {
+/* main > div > article {
   color: rgb(242, 177, 91);
   border: 1px solid rgb(242, 177, 91);
-}
+} */

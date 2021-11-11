@@ -6,7 +6,7 @@ const ArticleDetails = ({ currentArticle }) => {
 
   return (
     <section className='article-details-container'>
-      <p> I am the ARTICLE DETAILS</p>
+      {/* <p> I am the ARTICLE DETAILS</p> */}
       {currentArticle.multimedia !== undefined && <img src={currentArticle.multimedia[0].url} alt='' />}
       {currentArticle.multimedia !== undefined && <p>IMG CAPTION: {currentArticle.multimedia[0].caption}</p>}
       <p>TITLE: {currentArticle.title}</p>
