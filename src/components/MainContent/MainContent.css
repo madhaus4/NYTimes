@@ -1,0 +1,14 @@
+main {
+  color: purple;
+  border: 1px solid purple;
+}
+
+main > div {
+  color: pink;
+  border: 1px solid pink;
+}
+
+main > div > article {
+  color: rgb(242, 177, 91);
+  border: 1px solid rgb(242, 177, 91);
+}
