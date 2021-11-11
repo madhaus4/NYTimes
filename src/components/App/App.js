@@ -9,21 +9,20 @@ const App = () => {
   const [allArticles, setAllArticles] = useState([])
   // const [errorMsg, setErrorMsg] = useState('')
 
-  const setData = () => {
-    getData('arts')
+  const setData = (category) => {
+    getData(category)
       .then(data => setAllArticles(data.results))
       .catch(error => console.log('error: ', error))
   }
 
   useEffect(() => {
-    setData()
+    setData('us')
   }, [])
 
   return (
     <div className="App">
-      {/* <p>New York Times News Reader</p> */}
       <img src={logo} alt='' />
-      <NavBar />
+      <NavBar setData={setData} />
       <MainContent allArticles={allArticles} />
     </div>
   );
