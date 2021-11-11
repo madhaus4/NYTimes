@@ -10,3 +10,14 @@
   top: 0;
   right: 33%;
 } */
+
+
+.divider-line {
+  width: 96%;
+  height: 1px;
+  z-index: 10;
+  position: fixed;
+  top: 30vh;
+  left: 2%;
+  background-color: black;
+}
