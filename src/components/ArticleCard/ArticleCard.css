@@ -7,3 +7,9 @@
   width: 20vw;
   height: auto;
 }
+
+.article-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

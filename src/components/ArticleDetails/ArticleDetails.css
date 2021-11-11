@@ -1,0 +1,6 @@
+.article-details-container {
+  width: 40vw;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+}
