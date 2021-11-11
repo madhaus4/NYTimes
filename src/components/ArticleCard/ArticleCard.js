@@ -6,8 +6,11 @@ const ArticleCard = ({ title, date, abstract, multimedia }) => {
     <article className='article-card'>
       {/* <p>I am the ARTICLE CARD</p> */}
       <img src={multimedia} alt='' />
-      <p>{title}</p>
-      <p>{date}</p>
+      <div className='article-info'>
+        <p>{title}</p>
+        <p>{date}</p>
+        <button>Read more</button>
+      </div>
       {/* <p>{abstract}</p> */}
     </article>
   )

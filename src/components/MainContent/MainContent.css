@@ -1,6 +1,10 @@
 main {
   color: purple;
   border: 1px solid purple;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 main > div {
