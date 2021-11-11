@@ -3,8 +3,15 @@ import './ArticleContainer.css';
 
 const ArticleContainer = ({ currentArticles }) => {
   console.log('currentArticles: ', currentArticles)
+  let counter = 0
   const articleSet = currentArticles.map(article => {
-    return <ArticleCard title={article.title} date={article.published_date} />
+    return <ArticleCard 
+      key={counter++}
+      title={article.title} 
+      date={article.published_date} 
+      abstract={article.abstract}
+      multimedia={article.multimedia[0].url}
+    />
   })
 
   return (
