@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getData } from '../../utils/apiCalls';
-import logo from '../../NYT2.png';
+// import logo from '../../NYT2.png';
 import MainContent from '../MainContent/MainContent';
 import NavBar from '../NavBar/NavBar';
 import './App.css';
@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <img src={logo} alt='' />
+      {/* <img src={logo} alt='' /> */}
       <NavBar setData={setData} />
       <MainContent allArticles={allArticles} />
     </div>
