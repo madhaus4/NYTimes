@@ -10,7 +10,7 @@ const ArticleDetails = ({ currentArticle }) => {
     <>
 
     {!currentArticle.title && <section className='article-details-container'>
-      <h1>click on an article to view details</h1>
+      <h1 className='blink-2'>click on an article to view details</h1>
     </section>}
     
 
