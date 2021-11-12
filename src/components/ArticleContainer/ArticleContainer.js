@@ -2,10 +2,6 @@ import ArticleCard from '../ArticleCard/ArticleCard';
 import './ArticleContainer.css';
 
 const ArticleContainer = ({ allArticles, getCurrentArticle }) => {
-  
-  console.log('allArticles: ', allArticles)
-
-  
   let counter = 0
   const articleSet = allArticles.map(article => {
     if (article.multimedia) {
@@ -23,7 +19,6 @@ const ArticleContainer = ({ allArticles, getCurrentArticle }) => {
 
   return (
     <div className='article-container'>
-      {/* <p>I am the ARTICLE CONTAINER</p> */}
       {articleSet}
     </div>
   )
