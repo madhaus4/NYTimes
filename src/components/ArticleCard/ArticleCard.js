@@ -1,4 +1,8 @@
 import './ArticleCard.css';
+import dayjs from 'dayjs';
+
+var localizedFormat = require('dayjs/plugin/localizedFormat')
+dayjs.extend(localizedFormat)
 
 const ArticleCard = ({ articleID, title, date, abstract, multimedia, getCurrentArticle }) => {
 
@@ -7,7 +11,8 @@ const ArticleCard = ({ articleID, title, date, abstract, multimedia, getCurrentA
       <img src={multimedia} alt='' />
       <div className='article-info'>
         <p>{title}</p>
-        <p>{date}</p>
+        {/* <p>{dayjs(date).format('MM/DD/YYYY')}</p> */}
+        <p>{dayjs(date).format('llll')}</p>
         <button onClick={() => getCurrentArticle(title)}>Read more</button>
       </div>
     </article>
