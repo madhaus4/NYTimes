@@ -1,11 +1,11 @@
-<div align="center"><img src="https://user-images.githubusercontent.com/76507607/141417257-f7910ea7-485c-4335-b106-b1573cfe7c8b.png" height="150px" width="150px"/><h1>NYT Reader</h1>
+<div align="center"><img src="https://user-images.githubusercontent.com/76507607/141417257-f7910ea7-485c-4335-b106-b1573cfe7c8b.png" height="150px" width="150px"/>
+</div>
+
+<div align="center">
+<h1>NY Times News Reader</h1>
 <p>A quick refrence for top stores from the New York Times.</p>
 <a href="https://nyt-imes-madhaus4.vercel.app/">View Deployed Site Here</a>
 </div>
-
-# NY Times News Reader
-
-
 
 ---
 
@@ -73,11 +73,8 @@ JavaScript | CSS | HTML5 | React |
 
 ---
 ### Contributor:
-#### Maria DelSignore <br>
-- [GH](https://github.com/madhaus4) <br>
-- [LinkedIn](https://www.linkedin.com/in/mariadelsignore/)
 
-
+#### Maria DelSignore • [GH](https://github.com/madhaus4) & [LinkedIn](https://www.linkedin.com/in/mariadelsignore/)
 
 
 ---
