@@ -11,5 +11,23 @@
 .article-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  /* justify-content: center; */
+  padding: 0 1vh;
+  margin: 0 1vh;
 }
+
+.article-info > h2 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.article-info > button {
+  width: 50%;
+}
+
+.article-info > p {
+  font-size: .85em;
+}
+
