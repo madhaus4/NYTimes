@@ -45,6 +45,7 @@ JavaScript | CSS | HTML5 | React
 
 ### Future Features & Noteworthy Limitations
 - Include a favoriting feature for the user to come back to articles they'd like to read
+- Add a scroll to top button and have that functionality built into when a navigation button is clicked
 
 ### Preview
 ![recording (1)](https://user-images.githubusercontent.com/76507607/141492091-96406897-57ab-4d7a-91e5-e07f44f4793d.gif)
