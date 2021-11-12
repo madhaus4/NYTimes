@@ -1,20 +1,15 @@
 main {
-  /* color: purple;
-  border: 1px solid purple; */
-
+  margin-top: 29vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-  margin-top: 29vh;
 }
 
-/* main > div {
-  color: pink;
-  border: 1px solid pink;
-} */
-
-/* main > div > article {
-  color: rgb(242, 177, 91);
-  border: 1px solid rgb(242, 177, 91);
-} */
+.divider-line-vertical {
+  width: 1px;
+  height: 65%;
+  position: fixed;
+  z-index: 10;
+  left: 53vw;
+  background-color: black;
+}
