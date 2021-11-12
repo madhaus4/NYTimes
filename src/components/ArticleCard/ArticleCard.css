@@ -12,22 +12,28 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* justify-content: center; */
   padding: 0 1vh;
   margin: 0 1vh;
 }
 
-.article-info > h2 {
+.article-info > div > h2 {
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
   font-size: 1em;
+  padding: 10px 0;
+}
+
+
+.article-info > div > h3 {
+  font-size: .85em;
+  font-weight: 400;
+  color: red;
+}
+
+.article-info > div > p {
+  font-size: .85em;
 }
 
 .article-info > button {
   width: 50%;
 }
-
-.article-info > p {
-  font-size: .85em;
-}
-

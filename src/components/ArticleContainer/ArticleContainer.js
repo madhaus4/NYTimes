@@ -10,7 +10,8 @@ const ArticleContainer = ({ allArticles, getCurrentArticle }) => {
       articleID={counter++}
       title={article.title} 
       date={article.published_date} 
-      abstract={article.abstract}
+      section={article.section}
+      subsection={article.subsection}
       multimedia={article.multimedia[0].url}
       getCurrentArticle={getCurrentArticle}
       />
