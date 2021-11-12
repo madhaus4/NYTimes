@@ -12,13 +12,15 @@ const ArticleDetails = ({ currentArticle }) => {
     {!currentArticle.title && <section className='article-details-container'>
       <h1>click on an article to view details</h1>
     </section>}
+    
 
     {currentArticle.title && <section className='article-details-container'>
 
       <div className='detail-info'>
         <p>{dayjs(currentArticle.published_date).format('llll')}</p>
         <h2>{currentArticle.title}</h2>
-        <p>{currentArticle.abstract}</p>
+        <h3>{currentArticle.abstract}</h3>
+        <a href={currentArticle.short_url}>VIEW FULL ARTICLE HERE</a>
       </div>
 
       {currentArticle.multimedia !== undefined && <div className='detail-img'>
@@ -27,7 +29,6 @@ const ArticleDetails = ({ currentArticle }) => {
         <p>{currentArticle.multimedia[0].copyright}</p>
       </div>}
 
-      <a href={currentArticle.short_url}>VIEW FULL ARTICLE HERE</a>
 
     </section>}
 
