@@ -15,10 +15,38 @@
   margin: auto;
 }
 
-.article-details-container > h2 {
+.detail-info {
+  text-align: center;
+}
+
+.detail-info > p {
+  font-size: .85em;
+  text-align: justify;
+}
+
+.detail-info > h2 {
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
+  font-size: 1.15em;
+  text-align: justify;
+}
+
+.detail-info > h3 {
   font-size: 1em;
+  font-weight: 400;
+  padding: 3px 0;
+  text-align: justify;
+}
+
+.detail-info > a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.detail-info > a:hover {
+  color: red;
 }
 
 .detail-img > img {
