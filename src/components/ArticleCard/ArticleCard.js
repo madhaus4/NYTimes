@@ -1,7 +1,6 @@
 import './ArticleCard.css';
 import dayjs from 'dayjs';
-
-var localizedFormat = require('dayjs/plugin/localizedFormat')
+const localizedFormat = require('dayjs/plugin/localizedFormat')
 dayjs.extend(localizedFormat)
 
 const ArticleCard = ({ articleID, title, date, section, subsection, multimedia, getCurrentArticle }) => {
