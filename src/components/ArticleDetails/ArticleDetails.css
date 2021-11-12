@@ -6,6 +6,14 @@
   margin: 0 3vw;
 }
 
+.article-details-container > h2 {
+  font-family: 'Rock Salt', cursive;
+  font-size: 2.25em;
+  text-align: center;
+  width: 65%;
+  margin: auto;
+}
+
 .article-details-container > img {
   height: auto;
   width: 40vw;

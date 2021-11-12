@@ -15,7 +15,7 @@ const App = () => {
   }
 
   useEffect(() => {
-    setData('us')
+    setData('world')
   }, [])
 
   return (
