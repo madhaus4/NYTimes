@@ -4,7 +4,7 @@ import './ArticleContainer.css';
 const ArticleContainer = ({ allArticles, getCurrentArticle }) => {
   let counter = 0
   const articleSet = allArticles.map(article => {
-    if (article.multimedia) {
+    if (article.multimedia && article.title !== '') {
       return <ArticleCard 
       key={counter++}
       articleID={counter++}
