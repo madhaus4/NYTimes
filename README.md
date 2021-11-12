@@ -1,10 +1,9 @@
-<div align="center"><img src="https://user-images.githubusercontent.com/76507607/141403615-b706f171-cbaa-4813-b398-9f6cb806d089.png" height="150px" width="150px"/><h1>NYT Reader</h1>
+<div align="center"><img src="https://user-images.githubusercontent.com/76507607/141417257-f7910ea7-485c-4335-b106-b1573cfe7c8b.png" height="150px" width="150px"/><h1>NYT Reader</h1>
 <p>A quick refrence for top stores from the New York Times.</p>
 <a href=" ">View Deployed Site Here</a>
 </div>
 
 # NY Times News Reader
-
 
 
 
