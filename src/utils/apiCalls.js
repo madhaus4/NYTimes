@@ -5,7 +5,3 @@ export const getData = (category) => {
 
 
 
-
-
-
-// API_KEY = '5EdWhsnyQbSNLLfvv9XAl96fXPastXTg'

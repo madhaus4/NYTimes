@@ -6,7 +6,6 @@ import './App.css';
 
 const App = () => {
   const [allArticles, setAllArticles] = useState([])
-  // const [errorMsg, setErrorMsg] = useState('')
 
   const setData = (category) => {
     getData(category)
