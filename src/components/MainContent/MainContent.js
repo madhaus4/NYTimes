@@ -14,6 +14,7 @@ const MainContent = ({ allArticles }) => {
   return (
     <main>
       <ArticleContainer allArticles={allArticles} getCurrentArticle={getCurrentArticle} />
+      <div className='divider-line-vertical'></div>
       <ArticleDetails currentArticle={currentArticle} />
     </main>
   )
