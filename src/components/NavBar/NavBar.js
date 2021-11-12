@@ -1,9 +1,7 @@
-// import { useState } from 'react';
 import logo from '../../NYT2.png';
 import './NavBar.css';
 
 const NavBar = ({ setData }) => {
-  // const [] = useState()
 
   return (
     <nav className='nav-bar'>
