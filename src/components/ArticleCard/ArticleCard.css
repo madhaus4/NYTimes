@@ -37,3 +37,7 @@
 .article-info > button {
   width: 50%;
 }
+
+.article-info > button:hover {
+  cursor: pointer;
+}

@@ -37,3 +37,7 @@
 .nav-container > button {
   margin: 0.5vh 0.5vh;
 }
+
+.nav-container > button:hover {
+  cursor: pointer;
+}
