@@ -17,9 +17,7 @@
 .nav-bar > img {
   height: 24vh;
   width: auto;
-  /* position: fixed;
-  top: 0;
-  right: 33%; */
+  padding-left: 1vw;
 }
 
 .nav-container {
