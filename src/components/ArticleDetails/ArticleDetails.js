@@ -1,4 +1,8 @@
 import './ArticleDetails.css';
+import dayjs from 'dayjs';
+
+var localizedFormat = require('dayjs/plugin/localizedFormat')
+dayjs.extend(localizedFormat)
 
 const ArticleDetails = ({ currentArticle }) => {
 
@@ -10,13 +14,21 @@ const ArticleDetails = ({ currentArticle }) => {
     </section>}
 
     {currentArticle.title && <section className='article-details-container'>
-      <h2>{currentArticle.title}</h2>
-      {currentArticle.multimedia !== undefined && <img src={currentArticle.multimedia[0].url} alt='' />}
-      {currentArticle.multimedia !== undefined && <p>IMG CAPTION: {currentArticle.multimedia[0].caption}</p>}
-      <p>DATE: {currentArticle.published_date}</p>
-      <p>ABSTRACT: {currentArticle.abstract}</p>
-      <p>BYLINE: {currentArticle.by_line}</p>
+
+      <div className='detail-info'>
+        <p>{dayjs(currentArticle.published_date).format('llll')}</p>
+        <h2>{currentArticle.title}</h2>
+        <p>{currentArticle.abstract}</p>
+      </div>
+
+      {currentArticle.multimedia !== undefined && <div className='detail-img'>
+        <img src={currentArticle.multimedia[0].url} alt='' />
+        <p>{currentArticle.multimedia[0].caption}</p>
+        <p>{currentArticle.multimedia[0].copyright}</p>
+      </div>}
+
       <a href={currentArticle.short_url}>VIEW FULL ARTICLE HERE</a>
+
     </section>}
 
     </>
@@ -25,5 +37,3 @@ const ArticleDetails = ({ currentArticle }) => {
 
 
 export default ArticleDetails;
-{/* <img src={currentArticle.multimedia[0].url} alt='' />
-<p>IMG CAPTION: {currentArticle.multimedia[0].caption}</p> */}

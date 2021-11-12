@@ -1,7 +1,8 @@
 .article-details-container {
   width: 40vw;
   height: 100vh;
-  position: fixed;
+  /* position: fixed; */
+  position: absolute;
   right: 0;
   margin: 0 3vw;
 }
@@ -20,7 +21,12 @@
   font-size: 1em;
 }
 
-.article-details-container > img {
+.detail-img > img {
   height: auto;
   width: 40vw;
+}
+
+.detail-img > p {
+  font-size: .75em;
+  text-align: right;
 }
