@@ -10,9 +10,9 @@ const ArticleCard = ({ articleID, title, date, abstract, multimedia, getCurrentA
     <article id={articleID} className='article-card'>
       <img src={multimedia} alt='' />
       <div className='article-info'>
-        <p>{title}</p>
-        {/* <p>{dayjs(date).format('MM/DD/YYYY')}</p> */}
         <p>{dayjs(date).format('llll')}</p>
+        <h2>{title}</h2>
+        {/* <p>{dayjs(date).format('MM/DD/YYYY')}</p> */}
         <button onClick={() => getCurrentArticle(title)}>Read more</button>
       </div>
     </article>
